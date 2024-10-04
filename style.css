@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Cairo:wght@200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    min-height: 100vh;
+    background-color: #e7f2fd;
+}
+.container{
+    position: relative;
+    max-width: 1350px;
+    width: 100%;
+    margin: 50px auto;
+    padding: 20px;
+}
+.filter-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+button{
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.05);
+}
+button.active{
+    background-color: #4070f4;
+    color: #fff;
+}
+.filterable{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0 30px 30px;
+}
+.filterable .box{
+    background-color: #fff;
+    height: 200px;
+    width: 200px;
+    padding: 3px;
+    border-radius: 8px;
+    flex-grow: 1;
+}
+
+.box.hide{
+    display: none;
+}
+.filterable .box img{
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+.filterable .box h4{
+   font-size: 14px;
+   padding-left: 10px;
+   padding-top: 5px;
+   font-weight: 500;
+   color: #79b4f0;
+}
+.filterable .box p{
+    font-size: 13px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-top: 2px;
+    font-weight: 500;
+    color: #084e94;
+}
